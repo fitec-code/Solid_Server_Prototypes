@@ -1,0 +1,22 @@
+{
+  "name": "test_package",
+  "version": "1.0.0",
+  "description": "test packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitec-code/Solid_Server_Prototypes.git"
+  },
+  "author": "Josh Frost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fitec-code/Solid_Server_Prototypes/issues"
+  },
+  "homepage": "https://github.com/fitec-code/Solid_Server_Prototypes#readme",
+  "dependencies": {
+    "@solid/community-server": "^4.0.0"
+  }
+}
