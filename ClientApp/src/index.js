@@ -213,7 +213,7 @@ import {
         let date = getStringNoLocale(items[i], 'https://schema.org/date');
         let value = getInteger(items[i], 'https://schema.org/value');
         if (name !== null) {
-          listcontent += 'On ' + date + ', £' + value + ' on heating from ' + name + "\n";
+          listcontent += 'On ' + date + ', £' + value + ' on ' + dat + ' from ' + name + "\n";
         }
     }
 

@@ -170,6 +170,7 @@ import {
         let tot = 0
         let min = getInteger(items[0], 'https://schema.org/value')
         let max = getInteger(items[0], 'https://schema.org/value')
+        let val
         for (i = 0; i < items.length; i++) {
             val = getInteger(items[i], 'https://schema.org/value')
             tot = tot + val
@@ -193,7 +194,8 @@ import {
   };
 
   buttonReadHeating.onclick = function () {
-    readHeating();
+    readHeating('Heating');
+    readHeating('Wifi');
   }
  
   writeForm.addEventListener("submit", (event) => {
@@ -203,7 +205,6 @@ import {
  
   readForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    readProfile('Heating');
-    readProfile('Wifi')
+    readProfile();
   });
  
